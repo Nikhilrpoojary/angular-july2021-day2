@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-
-interface IUser {
-  name: string;
-  age: number;
-}
+import { IUser } from './models/user';
+ 
 
 @Component({
   selector: 'app-root',
@@ -27,7 +24,7 @@ export class AppComponent {
     }
   ];
 
-  onBtnClick(user: IUser): void {
+  onUserSelect(user: IUser): void {
     this.selectedUser = user;
   }
 }
